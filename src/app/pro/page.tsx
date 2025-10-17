@@ -10,7 +10,7 @@ export default async function ProPage() {
 
   const {has} = await auth();
   const hasProPlan = has({plan: "ai_basic"}) || has({plan: "ai_pro"})
-  console.log(hasProPlan)
+
 
   return (
     <>
